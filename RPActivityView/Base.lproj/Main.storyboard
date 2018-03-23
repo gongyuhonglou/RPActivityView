@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJU-8G-A4p">
+                                <rect key="frame" x="71" y="52" width="85" height="30"/>
+                                <color key="backgroundColor" red="0.92724764047756092" green="1" blue="0.40162134561109453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="开启指示器"/>
+                                <connections>
+                                    <action selector="startActivity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jyj-9Y-ay5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJ0-ER-2PD">
+                                <rect key="frame" x="242" y="52" width="85" height="30"/>
+                                <color key="backgroundColor" red="0.39233400777503991" green="1" blue="0.91488809723303555" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="关闭指示器"/>
+                                <connections>
+                                    <action selector="closeActivity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aW9-g2-6OW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LJ0-ER-2PD" firstAttribute="leading" secondItem="YJU-8G-A4p" secondAttribute="trailing" constant="86" id="1M5-1L-nQK"/>
+                            <constraint firstItem="YJU-8G-A4p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="Kq2-1f-IZm"/>
+                            <constraint firstItem="YJU-8G-A4p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="PB8-bC-Szf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LJ0-ER-2PD" secondAttribute="trailing" constant="48" id="RQC-rh-DPb"/>
+                            <constraint firstItem="YJU-8G-A4p" firstAttribute="height" secondItem="LJ0-ER-2PD" secondAttribute="height" id="eoh-Wp-RMZ"/>
+                            <constraint firstItem="YJU-8G-A4p" firstAttribute="width" secondItem="LJ0-ER-2PD" secondAttribute="width" id="fkX-7f-NSJ"/>
+                            <constraint firstItem="LJ0-ER-2PD" firstAttribute="centerY" secondItem="YJU-8G-A4p" secondAttribute="centerY" id="whc-II-mnY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
